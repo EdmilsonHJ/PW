@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2? family= EB+Garamond:wght@400;500;600;700 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --laranja: #fa5e00;
+    --branca: #fff;
+    --preta: #1e1c2a;
+}
+
+body {
+    color: var(--preta);
+    background: var(--branca);
+}
+
+/*-----------------Estilizando o Navegador--------------- */
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--branca);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+/*Estilizando Logo*/
+.navegacao .logo {
+    color: var(--laranja);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--preta);
+}
+
+/*----------------Estilizando botao de inicio de sessao e de Cadastre----------------- */
+.navegacao-btn .btn-sessao{
+    padding: 10px 10px;
+    background: var(--preta);
+    color: var(--branca);
+    border-radius: 15px;
+    font-weight: 700;
+    transition: all 0.5s;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.navegacao-btn .btn-cadastro{
+    padding: 10px 10px;
+    background: var(--laranja);
+    color: var(--branca);
+    border-radius: 15px;
+    font-weight: 700;
+    transition: all 0.5s;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.navegacao-btn .btn-sessao:hover {
+    background: var(--branca);
+    border: 1px solid var(--preta);
+    color: var(--preta);
+}
+
+.navegacao-btn .btn-cadastro:hover {
+    background: var(--branca);
+    border: 1px solid var(--laranja);
+    color: var(--laranja);
+}
+
+
+
+
+
+/*--------------------*/
+
+/*------Estilizando listas na barra de Navegacao----- */
+.navegacao ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navegacao ul li a {
+    color: var(--preta);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navegacao ul li a:hover {
+    color: var(--laranja);
+}
+
+/*---------------Fim da barra de Navegacao------------------ */
+
+/*---------Estilizando o Conteudo do menu principal Main------ */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30% 5%;
+}
+
+.home-text {
+    max-width: 37rem;
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--preta);
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: var(--laranja);
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+.home-btn {
+    padding: 10px 20px;
+    background: var(--laranja);
+    color: var(--branca);
+    border-radius: 12px;
+    font-weight: 700;
+    transition: all 0.5s;
+    border: none;
+}
+
+.home-btn:hover {
+    background: var(--branca);
+    border: 1px solid var(--laranja);
+    color: var(--laranja);
+}
+
+.home-img img {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Scrollbar -personalizado */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background:var(--branca);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--preta);
+    border-radius: 20px;
+    border: 1px solid var(--branca);
+}
+
+/*----------------------------------------------*/
+
+
+/*--------- Fim Conteudo Menu Principal Main--------*/
+
+
+footer {
+    background-color: var(--laranja); /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto no footer */
+    padding: 20px 0; /* Espaçamento interno no footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Exibir os links na horizontal */
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-right: 20px; /* Espaçamento entre os links */
+}
+
+.footer-links ul li:last-child,
+.footer-social ul li:last-child {
+    margin-right: 0; /* Remover o espaço após o último link */
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+    color: #f2f2f2; /* Cor do texto no hover */
+}
+
+.footer-social .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-icons {
+    flex-direction: column; /* Exibir os ícones verticalmente */
+}
+
+
+
+/*--------------Responsividade-------------------*/
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+   
+    
+    body {
+        font-size: 14px;
+    }
+
+    .navegacao {
+        padding: 20px;
+    }
+
+    .navegacao .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu {
+      
+    }
+
+   
+    
+    .home {
+        padding: 20% 5%;
+    }
+
+    .home-text .text-h4 {
+        font-size: 1.2rem;
+    }
+
+    .home-text .text-h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+    }
+
+    .home-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .home-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links ul li,
+    .footer-social ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    /* Estilos para telas muito pequenas */
+
+    body {
+        font-size: 12px;
+    }
+
+    .navegacao {
+        padding: 15px;
+    }
+
+    .navegacao .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+       
+    }
+
+    .home {
+        padding: 10% 5%;
+    }
+
+    .home-text .text-h4 {
+        font-size: 1rem;
+    }
+
+    .home-text .text-h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .home-text p {
+        font-size: 0.8rem;
+    }
+
+    .home-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    .home-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    .footer-logo {
+        font-size: 1rem;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links ul li,
+    .footer-social ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesolicitarevento.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/Montagem de Fotos de Casamento Grade Limpo Marfim Prata.png" alt="">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Solicitar Evento</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label for="location">Primeiro Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="location">Sobrenome</label>
+                        <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite o seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="location">E-mail</label>
+                        <input id="email" type="email" name="enail" placeholder="Digite o seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="event-type">Tipo de Evento</label>
+                        <select id="event-type" name="event-type" required>
+                            <option value="">Selecione o tipo de evento</option>
+                            <option value="Casamento">Casamento</option>
+                            <option value="Aniversário">Aniversário</option>
+                            <option value="Conferência">Conferência</option>
+                            <!-- Adicione mais opções de eventos conforme necessário -->
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="participants">Número de Participantes</label>
+                        <input id="participants" type="number" name="participants" placeholder="Digite o número de participantes" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="location">Local</label>
+                        <input id="location" type="text" name="location" placeholder="Digite o local" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="budget">Orçamento Estimado</label>
+                        <input id="budget" type="text" name="budget" placeholder="Digite o orçamento estimado" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="event-date">Data do Evento</label>
+                        <input id="event-date" type="date" name="event-date" required>
+                    </div>
+                    
+                    <div class="input-box description-box">
+                        <label for="event-description">Descrição do Evento</label>
+                        <textarea id="event-description" name="event-description" placeholder="Digite a descrição do evento" required></textarea>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button><a href="paginaprincipal.html">Voltar</a></button>
+                    <button><a href="#">Enviar Solicitacao</a></button>
+                </div>  
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
